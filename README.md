@@ -13,7 +13,7 @@ them or create a symbolic link to them in the appropriate directory:
 
 Create a symbolic link of `fishy_function.fish` as an autoloading function:
 ```shell
-> ln -s .config/fish/functions/fishy_function.fish
+> ln -s fishy_function.fish ~/.config/fish/functions/fishy_function.fish
 ```
 
 ## Contributing
