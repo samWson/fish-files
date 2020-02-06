@@ -5,16 +5,19 @@ These are my custom functions and configuration for the Fish shell.
 ## Usage
 
 This repository is for developing and maintaining fish files. To use them copy
-them or create a symbolic link to them in the appropriate directory:
+them to the appropriate directory:
 - Autoloading functions: `~/.config/fish/functions/`
 - Shell initialization:  `~/.config/fish/config.fish`
 
-### Example
+Fish shell does not seem to like using symbolic links as autoloading functions.
+To help make the process of updating `*.fish` files in the directories less manual
+the `Makefile` has some tasks.
 
-Create a symbolic link of `fishy_function.fish` as an autoloading function:
-```shell
-> ln -s fishy_function.fish ~/.config/fish/functions/fishy_function.fish
-```
+### Copying Autoloading Functions
+
+`make autoloading_functions` will copy all the `*.fish` files in `/autoloading_functions`
+to `~/.config/fish/functions/`, overwriting existing files with the same name in
+the process.
 
 ## Contributing
 
