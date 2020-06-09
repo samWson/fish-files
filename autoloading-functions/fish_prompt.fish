@@ -4,5 +4,5 @@ function fish_prompt --description 'Returns the command prompt'
   end
 
   echo (pwd)
-  echo " $branch | > "
+  echo " | $branch | > "
 end
