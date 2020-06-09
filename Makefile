@@ -14,3 +14,6 @@ autoloading_functions:
 
 config:
 	cp config.fish $(config_dir)
+
+uninstall_autoloading_functions:
+	rm $(autoloading_functions_dir)/*
